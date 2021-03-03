@@ -2,6 +2,10 @@
   "name": "github-link",
   "version": "0.0.1",
   "description": "⚓ Get links for your GitHub files based on text, and forget the line numbers!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shhdharmen/github-link"
+  },
   "author": {
     "name": "Dharmen Shah",
     "url": "https://shhdharmen.me"
