@@ -55,6 +55,10 @@ https://github-link.vercel.app/api?ghUrl=<URL_TO_FILE>&q=<SEARCH>&noRedirection
 | q           | `string`                | Query text, to which link will be generated<br>*Validations: `MinLength=3`*   | Yes      |
 | noRedirect  | `'true' | 'false' | ''` | If set, will not redirect to code link                                        | No       |
 
+## Deploy Your Own Instance
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fshhdharmen%2Fgithub-link)
+
 ## Credits
 
 Logo inspired from [file-symlink-file](https://octicons-primer.vercel.app/octicons/file-symlink-file-24) of [Octicons](https://primer.style/octicons/).
