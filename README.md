@@ -49,11 +49,11 @@ https://github-link.vercel.app/api?ghUrl=<URL_TO_FILE>&q=<SEARCH>&noRedirection
 
 ### Supported Query Params
 
-| Query Param | Type                    | Description                                                                   | Required |
-| ----------- | ----------------------- | ----------------------------------------------------------------------------- | -------- |
-| ghUrl       | `string`                | URL of file hosted on github.com<br>*Validations: `URL` && `Host=github.com`* | Yes      |
-| q           | `string`                | Query text, to which link will be generated<br>*Validations: `MinLength=3`*   | Yes      |
-| noRedirect  | `'true' | 'false' | ''` | If set, will not redirect to code link                                        | No       |
+| Query Param | Type                      | Description                                                                   | Required |
+| ----------- | ------------------------- | ----------------------------------------------------------------------------- | -------- |
+| ghUrl       | `string`                  | URL of file hosted on github.com<br>*Validations: `URL` && `Host=github.com`* | Yes      |
+| q           | `string`                  | Query text, to which link will be generated<br>*Validations: `MinLength=3`*   | Yes      |
+| noRedirect  | `'true' \| 'false' \| ''` | If set, will not redirect to code link                                        | No       |
 
 ## Deploy Your Own Instance
 
