@@ -1,4 +1,10 @@
 {
   "builds": [{ "src": "dist/main.js", "use": "@vercel/node" }],
-  "routes": [{ "src": "/(.*)", "dest": "dist/main.js" }]
+  "routes": [{ "src": "/(.*)", "dest": "dist/main.js" }],
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://github.com/shhdharmen/github-link"
+    }
+  ]
 }
