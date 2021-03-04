@@ -116,6 +116,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
 
-## Credits
+## Credits 🙌
 
-Logo inspired from [file-symlink-file](https://octicons-primer.vercel.app/octicons/file-symlink-file-24) of [Octicons](https://primer.style/octicons/).
+- This is built on top of [nestjs](https://nestjs.com/) and deployed freely using [vercel](https://vercel.com/), thanks to their teams!
+- Logo is inspired from [file-symlink-file](https://octicons-primer.vercel.app/octicons/file-symlink-file-24) of [Octicons](https://primer.style/octicons/).
