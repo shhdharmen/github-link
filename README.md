@@ -12,7 +12,7 @@
 
 ### In Short
 
-We ususally create link-to-code to point our readers, users or developers to the exact code. But such links are created based on line-number and if you're updating the file regularly, those links will not point to correct line or you will need to keep updating your links. GitHub Link helps you to get the right link-to-code, based on text you give, so that it always points to contextually right definition. Jump to [usage](#usage)
+We usually create link-to-code to point our readers, users or developers to the exact code. But such links are created based on line-number and if you're updating the file regularly, those links will not point to correct line or you will need to keep updating your links. GitHub Link helps you to get the right link-to-code, based on text you give, so that it always points to contextually right definition. Jump to [usage](#usage)
 
 ### In Long
 
