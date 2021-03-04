@@ -7,7 +7,14 @@
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+
 ## Why GitHub Link?
+
+### In Short
+
+We ususally create link-to-code to point our readers, users or developers to the exact code. But such links are created based on line-number and if you're updating the file regularly, those links will not point to correct line or you will need to keep updating your links. GitHub Link helps you to get the right link-to-code, based on text you give, so that it always points to contextually right definition. Jump to [usage](#usage)
+
+### In Long
 
 We generally create [permanent link](https://docs.github.com/en/github/managing-your-work-on-github/creating-a-permanent-link-to-a-code-snippet) to code snippet. As they are for specific commit, they work great when referred in issues/PRs.
 
@@ -17,9 +24,39 @@ You may use "Copy Link" feature, that links to the latest version of file, but t
 
 This is where GitHub Link comes into the picture. It gives you the link to code line, based on the text, so that it always points to contextually right definition.
 
+#### Example
+
+1. You have all of your types defined in `hot-toast.model.ts`
+2. It looks something like below:
+
+```typescript
+export type ToastType = 'success' | 'error' | 'loading' | 'blank' | 'warning';
+```
+
+3. You are create a `READEME.md` and add a link by creating [permanent link](https://docs.github.com/en/github/managing-your-work-on-github/creating-a-permanent-link-to-a-code-snippet)
+4. It works, great!
+5. Now, you added a feature and you introduced a new type in `hot-toast.model.ts`
+
+```diff
++ export type ToastPosition = 'top-left' | 'top-center' | 'top-right' | 'bottom-left' | 'bottom-center' | 'bottom-right';
+export type ToastType = 'success' | 'error' | 'loading' | 'blank' | 'warning';
+```
+
+6. As the line for previous type is changed, the link on your `README` will point to `export type ToastPosition...`, instead of `export type ToastType...`.
+7. So, to resolve this problem, you can create github-link
+8. Let's take this URL for example: `https://github.com/ngneat/hot-toast/blob/master/projects/ngneat/hot-toast/src/lib/hot-toast.model.ts`
+9. Now the text to which we want to generate link is: `export type ToastType`
+10. Considering points 8 & 9, below will be your link:
+
+```
+https://github-link.vercel.app/api?ghUrl=https://github.com/ngneat/hot-toast/blob/master/projects/ngneat/hot-toast/src/lib/hot-toast.model.ts&q=export type ToastType
+```
+
+11. Above link will find first occurance of `export type ToastType` in given URL, get it's line and will redirect there!
+
 ## Usage
 
-1. Open the file in browser and copt it's URL, let's call it: `URL_TO_FILE`
+1. Open the file in browser and copy it's URL, let's call it: `URL_TO_FILE`
 2. Find the text to which you want to generate the link, let's call it: `SEARCH`
 3. Use both of above and create the link using GitHub Link API:
 
@@ -41,10 +78,10 @@ or HTML:
 
 By default, API will return a `redirect` response and user will be redirected to matched line on GitHub.
 
-If you don't want redirection, just add `noRedirection`:
+If you don't want redirection, just add `noRedirect`:
 
 ```
-https://github-link.vercel.app/api?ghUrl=<URL_TO_FILE>&q=<SEARCH>&noRedirection
+https://github-link.vercel.app/api?ghUrl=<URL_TO_FILE>&q=<SEARCH>&noRedirect
 ```
 
 ### Supported Query Params
@@ -58,10 +95,6 @@ https://github-link.vercel.app/api?ghUrl=<URL_TO_FILE>&q=<SEARCH>&noRedirection
 ## Deploy Your Own Instance
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fshhdharmen%2Fgithub-link)
-
-## Credits
-
-Logo inspired from [file-symlink-file](https://octicons-primer.vercel.app/octicons/file-symlink-file-24) of [Octicons](https://primer.style/octicons/).
 
 ## Contributors ✨
 
@@ -82,3 +115,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+## Credits
+
+Logo inspired from [file-symlink-file](https://octicons-primer.vercel.app/octicons/file-symlink-file-24) of [Octicons](https://primer.style/octicons/).
