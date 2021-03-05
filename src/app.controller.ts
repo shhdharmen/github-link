@@ -4,7 +4,7 @@ import { map } from 'rxjs/operators';
 import { AppService } from './app.service';
 import { GhLinkQueries } from './gh-link-queries';
 
-@Controller('api')
+@Controller()
 export class AppController {
   constructor(private readonly appService: AppService) {}
 

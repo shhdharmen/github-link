@@ -49,7 +49,7 @@ __decorate([
     __metadata("design:returntype", void 0)
 ], AppController.prototype, "getGhLink", null);
 AppController = __decorate([
-    common_1.Controller('api'),
+    common_1.Controller(),
     __metadata("design:paramtypes", [app_service_1.AppService])
 ], AppController);
 exports.AppController = AppController;
