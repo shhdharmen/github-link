@@ -14,17 +14,86 @@
     <link rel="manifest" href="/site.webmanifest" />
 
     <link rel="stylesheet" href="css/styles.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="body-bg"></div>
-    <div class="container-card text-center">
-      <img src="./android-chrome-192x192.png" width="100" />
-      <h1>GitHub Link</h1>
-      <p>
-        ⚓ Get links to code in your GitHub files based on text, and forget the
-        line numbers!
-      </p>
-      <a href="https://github.com/shhdharmen/github-link#github-link">View Docs</a>
+    <div class="container">
+      <div class="container-card">
+        <div class="tab-set" role="tablist">
+          <button
+            class="tab active"
+            role="tab"
+            data-target="#info"
+            aria-controls="info"
+            type="button"
+            title="About GitHub Link"
+          >
+            <i class="gg-info"></i>
+          </button>
+          <button
+            class="tab"
+            role="tab"
+            data-target="#create"
+            aria-controls="create"
+            type="button"
+            title="Create GitHub Link"
+          >
+            <i class="gg-add"></i>
+          </button>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane active" id="info">
+            <div class="header">
+              <img
+                src="./android-chrome-192x192.png"
+                class="img-fluid header-img"
+              />
+              <div class="header-text">
+                <h1>GitHub Link</h1>
+                <p>
+                  ⚓ Get links to code in your GitHub files based on text, and
+                  forget the line numbers!
+                </p>
+              </div>
+            </div>
+            <div class="action-buttons">
+              <a
+                class="btn"
+                href="https://github.com/shhdharmen/github-link#github-link"
+                >📃 View Docs</a
+              >
+              <a
+                href="https://github.com/shhdharmen/github-link#github-link"
+                class="btn btn-filled"
+                >⭐ Give a Star</a
+              >
+            </div>
+
+            <div class="footer-info">
+              <p>👨‍💻 Created by <strong>Dharmen Shah</strong></p>
+              <p>
+                👋 <a href="https://twitter.com/shhdharmen">twitter</a>,
+                <a href="https://github.com/shhdharmen">github</a>,
+                <a href="https://shhdharmen.me">web</a>,
+                <a href="https://blog.shhdharmen.me">blog</a>
+              </p>
+            </div>
+          </div>
+          <div class="tab-pane" id="create">
+            <h1>Create GitHub Link</h1>
+            <p>
+              ✨ Simply provide URL to file and search text to get the GitHub Link.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+    <script src="js/index.js"></script>
   </body>
 </html>
