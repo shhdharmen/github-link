@@ -64,6 +64,8 @@ https://github-link.vercel.app/api?ghUrl=https://github.com/ngneat/hot-toast/blo
 https://github-link.vercel.app/api?ghUrl=<URL_TO_FILE>&q=<SEARCH>
 ```
 
+I have also created a small helper at: <https://github-link.vercel.app#create>.
+
 You can use it markdown:
 
 ```markdown

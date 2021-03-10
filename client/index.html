@@ -20,6 +20,47 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Primary Meta Tags -->
+    <title>GitHub Link</title>
+    <meta name="title" content="GitHub Link" />
+    <meta
+      name="description"
+      content="⚓ Get links to code in your GitHub files based on text, and
+      forget the line numbers!"
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github-link.vercel.app/" />
+    <meta property="og:title" content="GitHub Link" />
+    <meta
+      property="og:description"
+      content="⚓ Get links to code in your GitHub files based on text, and
+      forget the line numbers!"
+    />
+    <meta
+      property="og:image"
+      content="https://repository-images.githubusercontent.com/344103510/67b3b280-7cca-11eb-917e-a264d3a579d3"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://github-link.vercel.app/" />
+    <meta property="twitter:title" content="GitHub Link" />
+    <meta
+      property="twitter:description"
+      content="⚓ Get links to code in your GitHub files based on text, and
+      forget the line numbers!"
+    />
+    <meta
+      property="twitter:image"
+      content="https://repository-images.githubusercontent.com/344103510/67b3b280-7cca-11eb-917e-a264d3a579d3"
+    />
   </head>
   <body>
     <div class="body-bg"></div>
@@ -88,8 +129,48 @@
           <div class="tab-pane" id="create">
             <h1>Create GitHub Link</h1>
             <p>
-              ✨ Simply provide URL to file and search text to get the GitHub Link.
+              ✨ Simply provide URL to file and search text to get the GitHub
+              Link.
             </p>
+            <div class="form-control-container">
+              <div class="badge-circle">1</div>
+
+              <input
+                type="text"
+                class="form-control"
+                placeholder="GitHub URL to file"
+                id="ghurl-input"
+              />
+            </div>
+            <div class="form-control-container">
+              <div class="badge-circle">2</div>
+
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search text"
+                id="q-input"
+              />
+            </div>
+            <div class="form-control-container">
+              <div class="badge-circle">✔</div>
+
+              <textarea
+                class="form-control"
+                placeholder="GitHub link will appear here"
+                readonly
+                id="github-link-result"
+                rows="4"
+              ></textarea>
+            </div>
+            <div class="action-buttons">
+              <button class="btn" id="github-link-copier" disabled>
+                📋 Copy GitHub Link
+              </button>
+              <a id="github-link-opener" class="btn btn-filled" target="_blank"
+                >↗ Open GitHub Link</a
+              >
+            </div>
           </div>
         </div>
       </div>
