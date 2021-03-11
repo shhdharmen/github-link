@@ -64,8 +64,6 @@ https://github-link.vercel.app/api?ghUrl=https://github.com/ngneat/hot-toast/blo
 https://github-link.vercel.app/api?ghUrl=<URL_TO_FILE>&q=<SEARCH>
 ```
 
-I have also created a small helper at: <https://github-link.vercel.app#create>.
-
 You can use it markdown:
 
 ```markdown
@@ -97,6 +95,12 @@ https://github-link.vercel.app/api?ghUrl=<URL_TO_FILE>&q=<SEARCH>&noRedirect
 ## Deploy Your Own Instance
 
 [![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fshhdharmen%2Fgithub-link)
+
+## Helper
+
+I have also created a helper at: <https://github-link.vercel.app/#create>
+
+[![https://github-link.vercel.app/#create](https://user-images.githubusercontent.com/6831283/110798424-2b6eec00-82a0-11eb-8b9e-ba552aceb6f6.png)](https://github-link.vercel.app/#create)
 
 ## Contributors ✨
 
