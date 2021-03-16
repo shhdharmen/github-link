@@ -54,7 +54,7 @@ function updateQ(e) {
 }
 
 function updateGitHubLink() {
-  const ghLink = `https://github-link.vercel.app/api?ghUrl=${ghUrl}&q=${q}`;
+  const ghLink = `https://github-link.vercel.app/api?ghUrl=${ghUrl}&q=${encodeURIComponent(q)}`;
   githubLink.value = ghLink;
   if (ghUrl && q) {
     ghLinkCopier.disabled = false;
