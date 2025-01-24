@@ -1,4 +1,4 @@
-import { HttpService } from '@nestjs/common';
+import { HttpService } from '@nestjs/axios';
 import { Observable } from 'rxjs';
 import { AxiosError } from 'axios';
 import { GhLinkResult } from './types';

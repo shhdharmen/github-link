@@ -13,18 +13,18 @@ exports.GhLinkQueries = void 0;
 const class_validator_1 = require("class-validator");
 class GhLinkQueries {
 }
+exports.GhLinkQueries = GhLinkQueries;
 __decorate([
-    class_validator_1.IsUrl({ protocols: ['https'], host_whitelist: ['github.com'] }),
+    (0, class_validator_1.IsUrl)({ protocols: ['https'], host_whitelist: ['github.com'] }),
     __metadata("design:type", String)
 ], GhLinkQueries.prototype, "ghUrl", void 0);
 __decorate([
-    class_validator_1.IsString(),
-    class_validator_1.MinLength(3),
+    (0, class_validator_1.IsString)(),
+    (0, class_validator_1.MinLength)(3),
     __metadata("design:type", String)
 ], GhLinkQueries.prototype, "q", void 0);
 __decorate([
-    class_validator_1.IsOptional(),
+    (0, class_validator_1.IsOptional)(),
     __metadata("design:type", String)
 ], GhLinkQueries.prototype, "noRedirect", void 0);
-exports.GhLinkQueries = GhLinkQueries;
 //# sourceMappingURL=gh-link-queries.js.map

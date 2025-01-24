@@ -1,4 +1,5 @@
-import { HttpService, Injectable } from '@nestjs/common';
+import { Injectable } from '@nestjs/common';
+import { HttpService } from '@nestjs/axios';
 import { Observable, of } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { AxiosResponse, AxiosError } from 'axios';
@@ -10,7 +11,7 @@ export class AppService {
   getGhLink(
     ghUrl: string,
     q: string,
-  ): Observable<GhLinkResult<AxiosError<any>>> {
+  ): Observable<GhLinkResult<AxiosError>> {
     return this.httpService.get<string>(ghUrl + '?raw=true').pipe(
       map((res: AxiosResponse) => {
         const text = res.data;

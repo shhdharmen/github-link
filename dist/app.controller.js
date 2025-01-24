@@ -22,7 +22,7 @@ let AppController = class AppController {
         this.appService = appService;
     }
     getGhLink(queries, res) {
-        return this.appService.getGhLink(queries.ghUrl, queries.q).pipe(operators_1.map((v) => {
+        return this.appService.getGhLink(queries.ghUrl, queries.q).pipe((0, operators_1.map)((v) => {
             if (res) {
                 if (typeof v === 'string') {
                     if (queries.noRedirect === 'true' || queries.noRedirect === '') {
@@ -40,17 +40,18 @@ let AppController = class AppController {
         }));
     }
 };
+exports.AppController = AppController;
 __decorate([
-    common_1.Get(),
-    common_1.Header('Cache-Control', 's-max-age=1, stale-while-revalidate'),
-    __param(0, common_1.Query()), __param(1, common_1.Res()),
+    (0, common_1.Get)(),
+    (0, common_1.Header)('Cache-Control', 's-max-age=1, stale-while-revalidate'),
+    __param(0, (0, common_1.Query)()),
+    __param(1, (0, common_1.Res)()),
     __metadata("design:type", Function),
     __metadata("design:paramtypes", [gh_link_queries_1.GhLinkQueries, Object]),
     __metadata("design:returntype", void 0)
 ], AppController.prototype, "getGhLink", null);
-AppController = __decorate([
-    common_1.Controller(),
+exports.AppController = AppController = __decorate([
+    (0, common_1.Controller)(),
     __metadata("design:paramtypes", [app_service_1.AppService])
 ], AppController);
-exports.AppController = AppController;
 //# sourceMappingURL=app.controller.js.map

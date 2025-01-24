@@ -1,1 +1,1 @@
-export declare type GhLinkResult<T> = string | T;
+export type GhLinkResult<T> = string | T;
